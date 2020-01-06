@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselProductView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:fillColor="@color/light_green"
+            app:pageColor="@color/light_gray"
+            app:radius="3dp"
+            app:slideInterval="3000"
+            app:strokeColor="@color/light_gray"
+            app:strokeWidth="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fontFamily="@font/proximanova_regular"
+            android:padding="@dimen/activity_horizontal_padding">
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Samsung Galaxy S10+ Brand New In Box (BNIB)"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp. 18.750.000"
+                android:textColor="@color/light_green"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <View
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                style="@style/horizontal_gray_divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/color_choice"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvProductColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_small_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_small_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_small_margin" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

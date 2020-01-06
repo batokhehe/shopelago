@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <include android:id="@+id/toolbar_default"
+                layout="@layout/toolbar_default"
+                android:visibility="gone"/>
+
+            <include android:id="@+id/toolbar_home"
+                layout="@layout/toolbar_home" />
+
+            <include android:id="@+id/toolbar_account"
+                layout="@layout/toolbar_account"
+                android:visibility="gone"/>
+
+            <include android:id="@+id/toolbar_filter"
+                layout="@layout/toolbar_filter"
+                android:visibility="gone"/>
+
+            <include android:id="@+id/toolbar_search"
+                layout="@layout/toolbar_search"
+                android:visibility="gone"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_below="@+id/appbar"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector_item_text"
+        app:itemTextColor="@drawable/selector_item_text"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/navigation" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

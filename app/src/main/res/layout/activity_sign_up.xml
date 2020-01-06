@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.activities.SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_shopelago2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_vertical_large_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_large_margin"
+            android:layout_marginRight="@dimen/activity_vertical_large_margin"
+            android:padding="@dimen/activity_vertical_small_margin"
+            android:background="@drawable/shape_sign_in">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_user"/>
+
+                <View style="@style/vertical_gray_small_divider"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_vsmall_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_vsmall_margin"/>
+
+                <EditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="@dimen/activity_horizontal_padding"
+                    android:hint="@string/full_name"
+                    android:background="@android:color/transparent"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:maxLines="1"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+            <View style="@style/horizontal_gray_small_divider"
+                android:layout_marginTop="@dimen/activity_vertical_vsmall_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_vsmall_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:padding="2dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_email"/>
+
+                <View style="@style/vertical_gray_small_divider"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_vsmall_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_vsmall_margin"/>
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="@dimen/activity_horizontal_padding"
+                    android:hint="@string/email"
+                    android:background="@android:color/transparent"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"/>
+
+            </LinearLayout>
+
+            <View style="@style/horizontal_gray_small_divider"
+                android:layout_marginTop="@dimen/activity_vertical_vsmall_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_vsmall_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_password"/>
+
+                <View style="@style/vertical_gray_small_divider"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_vsmall_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_vsmall_margin"/>
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="@dimen/activity_horizontal_padding"
+                    android:hint="@string/password"
+                    android:background="@android:color/transparent"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:maxLines="1"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+
+            <View style="@style/horizontal_gray_small_divider"
+                android:layout_marginTop="@dimen/activity_vertical_vsmall_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_vsmall_margin"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_password"/>
+
+                <View style="@style/vertical_gray_small_divider"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_vsmall_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_vsmall_margin"/>
+
+                <EditText
+                    android:id="@+id/etRepeatPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="@dimen/activity_horizontal_padding"
+                    android:hint="@string/repeat_password"
+                    android:background="@android:color/transparent"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:maxLines="1"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_large_margin"
+            android:gravity="center_horizontal"
+            android:text="Dengan mendaftar, saya menyetujui"
+            android:textColor="@color/gray"
+            android:fontFamily="@font/proximanova_regular"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_large_margin"
+            android:layout_marginRight="@dimen/activity_vertical_large_margin"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_vsmall_margin"
+                android:text="@string/terms_and_conditions"
+                android:textColor="@color/light_green"
+                android:fontFamily="@font/proximanova_regular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yang berlaku"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/proximanova_regular"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/activity_vertical_large_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_large_margin"
+            android:layout_marginRight="@dimen/activity_vertical_large_margin"
+            android:background="@drawable/shape_button_blue"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:fontFamily="@font/proximanova_regular"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_large_margin"
+            android:layout_marginRight="@dimen/activity_vertical_large_margin"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1.5"
+                android:layout_gravity="center_vertical"
+                style="@style/horizontal_gray_divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_padding"
+                android:text="@string/or"
+                android:textAllCaps="false"
+                android:textColor="@color/gray"
+                android:fontFamily="@font/proximanova_regular"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1.5"
+                android:layout_gravity="center_vertical"
+                style="@style/horizontal_gray_divider" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnRegisterFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_large_margin"
+            android:layout_marginRight="@dimen/activity_vertical_large_margin"
+            android:padding="@dimen/activity_horizontal_padding"
+            android:background="@drawable/shape_sign_in"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_small_margin"
+                app:srcCompat="@drawable/ic_facebook"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_with_facebook"
+                android:textColor="@color/gray"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="@font/proximanova_regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnRegisterGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_large_margin"
+            android:layout_marginRight="@dimen/activity_vertical_large_margin"
+            android:padding="@dimen/activity_horizontal_padding"
+            android:background="@drawable/shape_sign_in"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_small_margin"
+                app:srcCompat="@drawable/ic_google"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_with_google"
+                android:textColor="@color/gray"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:fontFamily="@font/proximanova_regular"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>

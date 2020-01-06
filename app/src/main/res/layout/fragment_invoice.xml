@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:padding="@dimen/activity_horizontal_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:padding="@dimen/activity_horizontal_large_padding"
+        android:background="@drawable/shape_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="7 May 2019"
+                android:textSize="18sp"
+                android:textColor="@color/dark_gray"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            style="@style/horizontal_gray_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_small_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/invoice_detail"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_vsmall_margin"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total_shopping"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimaryLight"/>
+
+                <TextView
+                    android:id="@+id/tvTotalShopping"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Rp. 325.500"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/light_green"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_vsmall_margin"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total_payment"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimaryLight"/>
+
+                <TextView
+                    android:id="@+id/tvTotalPayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Rp. 325.500"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/light_green"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPaymentMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer Bank"
+                android:textSize="10sp"
+                android:textColor="@color/dark_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_small_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/products_purchased"
+                android:textSize="16sp"
+                android:textColor="@color/black" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvInvoice"
+                android:name="com.shopelago.fragments.InvoiceFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="LinearLayoutManager"
+                tools:context=".view.fragments.InvoiceFragment"
+                tools:listitem="@layout/rv_item_invoice" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_vsmall_margin"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/delivery_fee"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimaryLight"/>
+
+                <TextView
+                    android:id="@+id/tvDeliveryFee"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Rp. 5.500"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/light_green"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCourierMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JNE - Reguler"
+                android:textSize="10sp"
+                android:textColor="@color/dark_gray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

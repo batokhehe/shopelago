@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        style="@style/horizontal_blue_divider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_large_margin"
+        android:gravity="center_horizontal"
+        android:text="@string/cancel_transaction"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_small_padding"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="@dimen/activity_horizontal_small_margin"
+            android:text="@string/no"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:background="@drawable/shape_button_green"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:text="@string/yes"
+            android:textAllCaps="false"
+            android:textColor="@color/light_green"
+            android:textSize="10sp"
+            android:background="@drawable/shape_button_white_green"/>
+
+    </LinearLayout>
+
+</LinearLayout>

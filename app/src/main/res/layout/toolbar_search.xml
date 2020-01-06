@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_no_border"
+    android:theme="@style/Theme.Design.NoActionBar"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:layout_scrollFlags="scroll|enterAlways">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBackSearch"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_back_black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_padding"
+            android:background="@drawable/shape_border">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:hint="@string/search"
+                android:fontFamily="@font/proximanova_regular"
+                android:paddingLeft="@dimen/activity_horizontal_padding"
+                android:textColorHint="@color/dark_gray"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:background="@drawable/shape_textsearch"/>
+
+            <LinearLayout
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_btnclearsearch">
+
+                <ImageButton
+                    android:id="@+id/btnClearSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_clear_search"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

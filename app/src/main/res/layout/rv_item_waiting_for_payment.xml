@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_vertical_small_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_small_margin"
+    android:background="@drawable/shape_border"
+    android:padding="@dimen/activity_horizontal_large_padding"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="28 Maret 2019"
+                android:textSize="18sp"
+                android:textColor="@color/dark_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_vsmall_margin"
+                android:paddingTop="@dimen/activity_horizontal_vsmall_padding"
+                android:paddingBottom="@dimen/activity_horizontal_vsmall_padding"
+                android:paddingLeft="@dimen/activity_horizontal_padding"
+                android:paddingRight="@dimen/activity_horizontal_padding"
+                android:text="@string/cancel_payment"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:background="@color/red"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/horizontal_gray_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/payment_detail"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_small_margin"
+            android:text="@string/total_payment"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimaryLight"/>
+
+
+        <TextView
+            android:id="@+id/tvTotalPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 73.200"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/light_green"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_small_margin"
+            android:text="@string/payment_method"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimaryLight"/>
+
+        <TextView
+            android:id="@+id/tvPaymentMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transfer Bank - BNI"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/light_green"/>
+
+        <TextView
+            android:id="@+id/tvPaymentAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(PT. Shopelago - 11937562735)"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/light_green"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnPaymentGuide"
+                android:layout_width="145dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/shape_button_blue"
+                android:text="@string/payment_method_button"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnInvoice"
+                android:layout_width="145dp"
+                android:layout_height="35dp"
+                android:background="@drawable/shape_button_blue"
+                android:text="@string/invoice"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"  />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

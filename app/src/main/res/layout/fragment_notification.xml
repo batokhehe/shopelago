@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/proximanova_bold"
+            android:text="@string/message"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <LinearLayout
+            android:id="@+id/lsUnread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:text="@string/unread_message"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@drawable/shape_circle_notification"
+                    android:gravity="center"
+                    android:layout_marginTop="-2dp"
+                    android:text="99+"
+                    android:textSize="7sp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/horizontal_gray_divider"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvInbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="@string/inbox"
+            android:textSize="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/black"
+            />
+
+        <View style="@style/horizontal_gray_divider"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvSent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="@string/sent"
+            android:textSize="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/black"
+            />
+
+        <View style="@style/horizontal_gray_divider"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/proximanova_bold"
+            android:text="@string/purchase"
+            android:textSize="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+
+        <TextView
+            android:id="@+id/tvWaitingPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="@string/waiting_payment"
+            android:textSize="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/black"
+            />
+
+        <View style="@style/horizontal_gray_divider"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvWaitingConfirmation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="@string/waiting_confirmation"
+            android:textSize="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/black"
+            />
+
+        <View style="@style/horizontal_gray_divider"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvOrderProcessed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="@string/order_processed"
+            android:textSize="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/black"
+            />
+
+        <View style="@style/horizontal_gray_divider"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvOrderSent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="@string/order_sent"
+            android:textSize="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/black"
+            />
+
+        <View style="@style/horizontal_gray_divider"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvOrderArrived"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="@string/order_arrived"
+            android:textSize="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/black"
+            />
+
+        <View style="@style/horizontal_gray_divider"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvPurchaseList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="@string/purchase_list"
+            android:textSize="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/black"
+            />
+
+        <View style="@style/horizontal_gray_divider"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

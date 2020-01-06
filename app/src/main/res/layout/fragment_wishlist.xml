@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:padding="@dimen/activity_horizontal_padding"
+            android:background="@drawable/shape_border">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/shape_edittext"
+                android:paddingLeft="@dimen/activity_horizontal_large_padding"
+                android:hint="@string/search_on_wishlist"
+                android:layout_marginBottom="@dimen/activity_vertical_small_margin"
+                android:textSize="14sp"
+                android:textColorHint="@color/dark_gray"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvWishlist"
+            android:name="com.shopelago.fragments.WishlistFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".view.fragments.WishlistFragment"
+            tools:listitem="@layout/rv_item_wishlist"
+            android:layout_marginBottom="@dimen/activity_vertical_small_margin"
+            android:background="@drawable/shape_border"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

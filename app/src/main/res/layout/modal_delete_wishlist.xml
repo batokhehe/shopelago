@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        style="@style/horizontal_blue_divider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center_horizontal"
+        android:text="@string/delete_from_wishlist"
+        android:fontFamily="@font/proximanova_regular"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_small_margin"
+        android:gravity="center_horizontal"
+        android:text="Olay Anti Aging Krim Pagi SPF15 - 50gr"
+        android:fontFamily="@font/proximanova_regular"
+        android:textSize="10sp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_small_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_small_margin"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_small_padding"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="@dimen/activity_horizontal_small_margin"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="10sp"
+            android:background="@drawable/shape_button_green"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textColor="@color/light_green"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="10sp"
+            android:background="@drawable/shape_button_white_green"/>
+
+    </LinearLayout>
+
+</LinearLayout>
